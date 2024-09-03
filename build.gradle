@@ -1,0 +1,39 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'hu.ibello:ibello-gradle-plugin:1.3'
+    }
+}
+
+plugins {
+    id 'java-library'
+}
+
+apply plugin: 'hu.ibello.gradle'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+repositories {
+	mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    api 'hu.ibello:ibello-api:1.21.1'
+}
+
+task ibelloRunAll(type: IbelloRun, group: 'ibello') {
+	description "Runs ibello java tests."
+	headless true
+}
+
+task ibelloCucumberAll(type: IbelloCucumber, group: 'ibello') {
+	description "Runs ibello cucumber tests."
+	headless true
+}
