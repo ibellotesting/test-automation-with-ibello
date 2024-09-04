@@ -19,6 +19,9 @@ public class LoginPage extends PageObject {
 
     @Find(by = By.BUTTON_TEXT, using = "Bejelentkezés")
     private WebElement loginButton;
+    
+    @Find(by = By.CLASS_NAME, using = "error")
+    private WebElement error;
 
     public void open_demo_page() {
         browser().openURL(URL);
@@ -41,6 +44,14 @@ public class LoginPage extends PageObject {
 
     public void set_password_to_$(String password) {
         doWith(passwordField).setValue(password);
+    }
+    
+    public void error_message_should_be_displayed() {
+        expectations().assume(error).toBe().displayed();
+    }
+    
+    public void $_error_message_should_be_displayed(String msg) {
+        expectations().assume(error).toHave().text(msg);
     }
 
 }
