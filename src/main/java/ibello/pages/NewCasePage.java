@@ -1,9 +1,7 @@
 package ibello.pages;
 
-import hu.ibello.actions.Key;
 import hu.ibello.core.Name;
 import hu.ibello.elements.WebElement;
-import hu.ibello.pages.PageObject;
 import hu.ibello.search.By;
 import hu.ibello.search.Find;
 import hu.ibello.search.Relation;
@@ -12,7 +10,7 @@ import hu.ibello.search.RelationType;
 import java.time.LocalDate;
 
 @Name("Cases page")
-public class NewCasePage extends PageObject {
+public class NewCasePage extends AbstractPageObject {
 
     @Find(by = By.TEXT, using = "Új ügy")
     @Relation(type = RelationType.DESCENDANT_OF, by = By.CLASS_NAME, using = "panel-heading")
@@ -75,13 +73,7 @@ public class NewCasePage extends PageObject {
     }
     
     public void set_validity_date_to_$(LocalDate date) {
-        int year = date.getYear();
-        int month = date.getMonth().getValue();
-        int day = date.getDayOfMonth();
-        doWith(validityField).sendKeys(String.valueOf(year));
-        doWith(validityField).sendKeys(Key.TAB);
-        doWith(validityField).sendKeys(String.valueOf(month));
-        doWith(validityField).sendKeys(String.valueOf(day));
+        set_date_field(validityField, date);
     }
     
     public void click_on_save_button() {
