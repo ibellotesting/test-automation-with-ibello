@@ -1,0 +1,59 @@
+{
+  "title": "Felhasználó",
+  "description": "A felhasználó adatainak szerkesztésére szolgáló funkció.",
+  "baseId": "user",
+  "functionalityId": "user",
+  "requirements": [
+    {
+      "id": "user-1",
+      "title": "Felhasználói adatok",
+      "archived": false,
+      "links": [],
+      "requirements": [
+        {
+          "id": "user-1-1",
+          "title": "A felhasználói adatok képernyőn nem szerkeszthető módon megjelenik a felhasználói név.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        },
+        {
+          "id": "user-1-2",
+          "title": "A felhasználói adatok képernyőn nem szerkeszthető módon megjelenik a felhasználó teljes neve.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        }
+      ]
+    },
+    {
+      "id": "user-2",
+      "title": "Jelszó módosítás",
+      "archived": false,
+      "links": [],
+      "requirements": [
+        {
+          "id": "user-2-1",
+          "title": "A felhasználói adatok képernyőn lehetőség van a jelszó megváltoztatására.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        },
+        {
+          "id": "user-2-2",
+          "title": "A jelszó megváltoztatásához helyesen meg kell adni a jelenlegi jelszót.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        },
+        {
+          "id": "user-2-3",
+          "title": "A jelszó megváltoztatásához kétszer meg kell adni az új jelszót.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        }
+      ]
+    }
+  ]
+}

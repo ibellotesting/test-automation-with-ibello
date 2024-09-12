@@ -1,0 +1,152 @@
+{
+  "title": "Ügyek",
+  "description": "Az ügyek nyilvántartására szolgáló funkció.",
+  "baseId": "cases",
+  "functionalityId": "cases",
+  "requirements": [
+    {
+      "id": "cases-1",
+      "title": "Ügyek listája",
+      "archived": false,
+      "links": [],
+      "requirements": [
+        {
+          "id": "cases-1-1",
+          "title": "Az ügyek listájában látható az összes ügy.",
+          "description": "Megjelenített adatok: azonosító, állapot, megnevezés, személy, érvényesség, felelős.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        },
+        {
+          "id": "cases-1-2",
+          "title": "Az ügyek listájában kezdeményezni lehet új ügy létrehozását.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        },
+        {
+          "id": "cases-1-3",
+          "title": "Az ügyek listájában meg lehet nyitni egy kiválasztott ügy adatai.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        }
+      ]
+    },
+    {
+      "id": "cases-2",
+      "title": "Új ügy felvétele",
+      "archived": false,
+      "links": [],
+      "requirements": [
+        {
+          "id": "cases-2-1",
+          "title": "Új ügy felvételekor meg lehet adni az új ügy alapadatait.",
+          "description": "Megadható adatok: megnevezés, érvényesség, személy.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        },
+        {
+          "id": "cases-2-2",
+          "title": "Új ügy felvételekor meg lehet adni az új ügy cím adatait.",
+          "description": "Megadható adatok: város, irányítószám, közterület, házszám.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        },
+        {
+          "id": "cases-2-3",
+          "title": "Új ügy felvételekor az ügy állapota mindenképpen \"új\" lesz.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        },
+        {
+          "id": "cases-2-4",
+          "title": "Új ügy felvételekor az ügy felelőse automatikusan kerül beállításra.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        },
+        {
+          "id": "cases-2-5",
+          "title": "Az új ügy felvétele megszakítható.",
+          "description": "Ekkor az ügy nem kerül mentésre.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        },
+        {
+          "id": "cases-2-6",
+          "title": "Az új ügy a rögzítés véglegesítése után bekerül az ügyek közé.",
+          "description": "",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        },
+        {
+          "id": "cases-2-7",
+          "title": "Az új ügy a rögzítés véglegesítése után automatikusan kap azonosítót.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        }
+      ]
+    },
+    {
+      "id": "cases-3",
+      "title": "Meglévő ügy módosítása",
+      "archived": false,
+      "links": [],
+      "requirements": [
+        {
+          "id": "cases-3-1",
+          "title": "Meglévő ügy módosításakor megjelenik az ügy azonosítója, amit nem lehet módosítani.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        },
+        {
+          "id": "cases-3-2",
+          "title": "Meglévő ügy módosításakor meg lehet változtatni az ügy alapadatait.",
+          "description": "Megadható adatok: megnevezés, állapot, érvényesség, személy.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        },
+        {
+          "id": "cases-3-3",
+          "title": "Meglévő ügy módosításakor meg lehet változtatni az ügy címét.",
+          "description": "Megadható adatok: város, irányítószám, közterület, házszám.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        },
+        {
+          "id": "cases-3-4",
+          "title": "Meglévő ügy módosításakor nem lehet megváltoztatni a felelőst.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        },
+        {
+          "id": "cases-3-5",
+          "title": "Meglévő ügy módosítása megszakítható.",
+          "description": "Ekkor az ügy adatai nem módosulnak.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        },
+        {
+          "id": "cases-3-6",
+          "title": "Meglévő ügy adatai a módosítás véglegesítése után frissülnek.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        }
+      ]
+    }
+  ]
+}

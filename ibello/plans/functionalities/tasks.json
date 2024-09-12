@@ -1,0 +1,19 @@
+{
+  "relativePath": "tasks.json",
+  "id": "tasks",
+  "title": "Demo alkalmazás",
+  "children": [
+    {
+      "id": "login",
+      "title": "Bejelentkezés"
+    },
+    {
+      "id": "cases",
+      "title": "Ügyek"
+    },
+    {
+      "id": "user",
+      "title": "Felhasználó"
+    }
+  ]
+}

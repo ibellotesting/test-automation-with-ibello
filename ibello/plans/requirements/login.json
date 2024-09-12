@@ -1,0 +1,52 @@
+{
+  "title": "Bejelentkezés",
+  "description": "",
+  "baseId": "login",
+  "functionalityId": "login",
+  "requirements": [
+    {
+      "id": "login-1",
+      "title": "Sikeres bejelentkezés",
+      "archived": false,
+      "links": [],
+      "requirements": [
+        {
+          "id": "login-1-1",
+          "title": "Az alkalmazásba be lehet jelentkezni érvényes felhasználói név és jelszó megadásával.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        },
+        {
+          "id": "login-1-2",
+          "title": "Sikeres bejelentkezés után az ügyek listája nyílik meg.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        }
+      ]
+    },
+    {
+      "id": "login-2",
+      "title": "Sikertelen bejelentkezés",
+      "archived": false,
+      "links": [],
+      "requirements": [
+        {
+          "id": "login-2-1",
+          "title": "A sikertelen bejelentkezésről az alkalmazás hibaüzenetet ad.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        },
+        {
+          "id": "login-2-2",
+          "title": "Sikertelen bejelentkezés után a bejelentkezést újra meg lehet próbálni.",
+          "archived": false,
+          "links": [],
+          "requirements": []
+        }
+      ]
+    }
+  ]
+}
