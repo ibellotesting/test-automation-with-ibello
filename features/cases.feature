@@ -3,6 +3,7 @@
 @cases
 Feature: Ügyekhez tartozó tesztek
 
+@cases-2-1 @cases-2-2 @cases-2-6
 Scenario: Jövőbeni érvényességi dátummal egy új ügy sikeresen rögzíthető
 	Given Cases: a felhasználó az új ügy rögzítési felületen van
 	And Cases: a felhasználó kitöltötte az összes adatot
@@ -10,4 +11,3 @@ Scenario: Jövőbeni érvényességi dátummal egy új ügy sikeresen rögzíthe
 	And Cases: a felhasználó elmenti az új ügyet
 	Then Cases: az új ügy felvétele sikeres
 	And Cases: az új ügy megjelenik az ügyek táblázatban
-	
