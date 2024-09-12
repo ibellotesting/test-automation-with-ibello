@@ -7,16 +7,18 @@ import hu.ibello.data.Model;
 import java.time.LocalDate;
 
 @Model
-@Name("Case")
-@Description("Data of a case")
+@Name("Ügy")
+@Description("Egy ügy adatai")
 public class Case {
 
+    @Name("Megnevezés")
+    @Description("Megnevezés leírása")
     private String name;
     private String person;
-    private int zipCode;
+    private Integer zipCode;
     private String city;
     private String street;
-    private int number;
+    private Integer number;
     private LocalDate validity;
     
     public String getName() {
@@ -35,11 +37,11 @@ public class Case {
         this.person = person;
     }
     
-    public int getZipCode() {
+    public Integer getZipCode() {
         return zipCode;
     }
     
-    public void setZipCode(int zipCode) {
+    public void setZipCode(Integer zipCode) {
         this.zipCode = zipCode;
     }
     
@@ -59,11 +61,11 @@ public class Case {
         this.street = street;
     }
     
-    public int getNumber() {
+    public Integer getNumber() {
         return number;
     }
     
-    public void setNumber(int number) {
+    public void setNumber(Integer number) {
         this.number = number;
     }
     

@@ -9,5 +9,5 @@ Scenario: Jövőbeni érvényességi dátummal egy új ügy sikeresen rögzíthe
 	And Cases: a felhasználó kitöltötte az összes adatot
 	When Cases: a felhasználó a holnapi napot adja meg érvényességi időnek
 	And Cases: a felhasználó elmenti az új ügyet
-	Then Cases: az új ügy felvétele sikeres
+	Then Cases: a felhasználó visszatér az ügyek oldalra
 	And Cases: az új ügy megjelenik az ügyek táblázatban

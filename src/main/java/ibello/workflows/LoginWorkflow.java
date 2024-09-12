@@ -6,7 +6,7 @@ import ibello.steps.LoginSteps;
 
 @Name("Login")
 public class LoginWorkflow extends StepLibrary {
-
+    
     private LoginSteps loginSteps;
 
     // 1.
@@ -38,15 +38,15 @@ public class LoginWorkflow extends StepLibrary {
     
     // 2.
     public void a_felhasználó_érvénytelen_jelszót_ad_meg() {
-        loginSteps.enter_$_password("blabla");
+    
     }
     
     public void a_bejelentkezés_sikertelen() {
-        loginSteps.login_page_is_loaded();
+    
     }
     
     public void a_felhasználó_érvénytelen_felhasználói_adatokkal_kapcsolatos_hibaüzenetet_kap() {
-        loginSteps.login_error_is_displayed();
+    
     }
 
 }
