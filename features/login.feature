@@ -2,7 +2,7 @@
 # namespace: Login
 @login
 Feature: Bejelentkezés tesztek
-
+  
 @login-1-1 @login-1-2
 Scenario: Érvényes felhasználói adatokkal a bejelentkezés sikeres
 	Given Login: a felhasználó a bejelentkezési felületen van

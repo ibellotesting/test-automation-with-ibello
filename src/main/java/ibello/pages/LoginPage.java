@@ -17,7 +17,7 @@ public class LoginPage extends PageObject {
     @Find(by = By.ID, using = "password")
     private WebElement passwordField;
 
-    @Find(by = By.BUTTON_TEXT, using = "Bejelentkezés")
+    @Find(by = By.BUTTON_TEXT, using = "${demo.login.button}")
     private WebElement loginButton;
     
     @Find(by = By.CLASS_NAME, using = "error")
