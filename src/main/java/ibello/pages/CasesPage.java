@@ -27,7 +27,10 @@ public class CasesPage extends PageObject {
     
     @Find(by = By.CSS_SELECTOR, using = "tbody tr")
     private WebElements tableRows;
-
+    
+    @Find(by = By.CSS_SELECTOR, using = "table")
+    private WebElement table;
+    
     public void page_must_be_loaded() {
         expectations().expect(title).toBe().displayed();
         expectations().expect(panel).toBe().displayed();
